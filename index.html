@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aisha | Portfolio-Website</title>
+    <!-- ANIMATION CDN SOURCES  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- importing google font POPPINS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/Favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/Favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/Favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/Favicons/site.webmanifest">
+    <!-- FONT ICONS (FONT AWSOME)-->
+    <script
+      src="https://kit.fontawesome.com/f90a6542b3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JQUERY   -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".mobile-navbar-btn").click(function () {
+          $("ul").toggleClass("show");
+        });
+      });
+
+      // Smooth scrolling code
+      $("a[href^='#']").click(function (e) {
+        e.preventDefault();
+        var target = $(this).attr("href");
+        $("html, body").animate({
+            scrollTop: $(target).offset().top
+        }, 1000, function () {
+            // This callback function will run after scrolling is complete
+            $("ul").removeClass("show"); // Close the navigation menu
+        });
+    });
+    </script>
+
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left" data-aos="fade-right"
+        data-aos-duration="3000">
+          <a  href="/index.html " class="nav-logo"
+            > <img class="logo" src="img/logo.png" alt="logo" height="30%" width="50%"></a>
+        </div>
+        <div class="right"></div>
+        <ul class="nav-links">
+          <li><a href="/#Home"  data-aos="fade-left" data-aos-duration="3000" data-aos-delay="100">Home</a></li>
+          <li><a href="#about"  data-aos="fade-left" data-aos-duration="3000" data-aos-delay="200">About</a></li>
+          <li><a href="#projects"  data-aos="fade-left" data-aos-duration="3000" data-aos-delay="300">Projects</a></li>
+          <li><a href="#skills" data-aos="fade-left" data-aos-duration="3000"data-aos-delay="400">Skills</a></li>
+          <li><a href="#contact" data-aos="fade-left" data-aos-duration="3000"data-aos-delay="500">Contact Me</a></li>
+        </ul>
+        <div class="mobile-navbar-btn" data-aos="fade-left"
+        data-aos-duration="3000" >
+          <i
+            name="menu-icon"
+            class="fa-sharp fa-solid fa-bars"
+            style="color: rgb(194, 134, 247)"
+          ></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN WEBSITE -->
+    <main>
+      <div class="area">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <!-- HOME SECTION START -->
+      <section id="Home">
+        <div class="leftSection">
+          <div class="about-paragraph"> 
+           <span class="text-pink"> HI THERE! </span> <br> My name is <span class="text-purple">Aisha</span>
+            <div>and I am passionate in</div>
+            <span id="element"></span>
+          </div>
+          <div class="cv-btn-container" data-aos="fade-right"
+          data-aos-duration="3000">
+            <a href="media files/Aisha _Masroor_CV.pdf" download=""
+              ><button class="btn-cv">
+               Download CV <i class="fa-solid fa-download"></i></button
+            ></a>
+          </div>
+        </div>
+
+        <div class="rightSection" data-aos="zoom-in" data-aos-duration="2000">
+          <img src="img/home.png" alt="home" />
+        </div>
+      </section>
+      <!-- HOME SECTION END -->
+
+      <!-- ABOUT SECTION START-->
+      <section id="about">
+        <div class="container">
+          <div class="about-heading">
+            <h1>about</h1>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="second-section">
+          <div class="left-content" data-aos="fade-right"
+          data-aos-duration="3000"
+          >
+            <img  src="img/about2.png" alt="about" />
+          </div>
+          <div class="right-content">
+            <div class="about-paragraph2" data-aos="fade-up"
+            data-aos-duration="3000">
+            <h1 class="heading">
+              Introduction: <br />
+              <span class="text-pink">Getting to know</span><br />
+              <span class="text-pink">me</span>
+            </h1>
+            <br />
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto
+              placeat doloremque officia voluptates dolorem, mollitia quisquam
+              reprehenderit suscipit. Hic nulla fuga deleniti labore, voluptates
+              esse architecto a. Fugiat natus iure similique placeat repudiandae
+              totam aspernatur doloremque quisquam! Eum aliquid earum aspernatur
+              quae quo libero voluptatum, debitis reprehenderit exercitationem
+              optio ullam!
+            </p>
+          </div>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT SECTION END-->
+      <!-- PROJECTS SECTION START -->
+      <section id="projects">
+        <div class="container">
+          <div class="about-heading">
+            <h1>projects</h1>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="card-container" >
+          <div class="third-section" data-aos="fade-up"data-aos-duration="3000" data-aos-delay="">
+            <div class="project-image" >
+              <img src="img/ui project.jpg" />
+            </div>
+            <h2 class="project-title">project title</h2>
+            <small class="project-desc">project-desc</small>
+            <div class="project-link">
+              <button class="btn btn--icon">
+                <span class="icon-wrapper">
+                  <a href=""
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <div class="third-section" data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="200">
+            <div class="project-image">
+              <img src="img/web proj.jpg" />
+            </div>
+            <h2 class="project-title">project title</h2>
+            <small class="project-desc">project-desc</small>
+            <div class="project-link">
+              <button class="btn btn--icon">
+                <span class="icon-wrapper">
+                  <a href=""
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </span>
+              </button>
+            </div>
+          </div>
+          <div class="third-section" data-aos="flip-up" data-aos-duration="2000" data-aos-delay="300">
+            <div class="project-image">
+              <img src="img/soft proj.jpg" />
+            </div>
+            <h2 class="project-title">project title</h2>
+            <small class="project-desc">project-desc</small>
+            <div class="project-link">
+              <button class="btn btn--icon">
+                <span class="icon-wrapper">
+                  <a href=""
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <div class="third-section" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="400">
+            <div class="project-image">
+              <img src="img/ui.jpg" />
+            </div>
+            <h2 class="project-title">project title</h2>
+            <small class="project-desc">project-desc</small>
+            <div class="project-link">
+              <button class="btn btn--icon">
+                <span class="icon-wrapper">
+                  <a href=""
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SKILLS SECTION START -->
+
+      <section id="skills">
+        <div class="container">
+          <div class="about-heading">
+            <h1>Skills</h1>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="fourth-section" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">
+            <img
+              width="96"
+              height="96"
+              src="https://img.icons8.com/color/96/html-5--v1.png"
+              alt="html-5--v1"
+            />
+            <h2 class="skill-title">html</h2>
+          </div>
+
+          <div class="fourth-section" data-aos="fade-up" data-aos-duration="300" data-aos-delay="200">
+            <img
+              width="96"
+              height="96"
+              src="https://img.icons8.com/color/96/css3.png"
+              alt="css3"
+            />
+            <h2 class="skill-title">css</h2>
+          </div>
+
+          <div class="fourth-section"data-aos="fade-up" data-aos-duration="300" data-aos-delay="300">
+            <img
+              width="96"
+              height="96"
+              src="https://img.icons8.com/color/96/javascript--v1.png"
+              alt="javascript--v1"
+            />
+            <h2 class="skill-title">js</h2>
+          </div>
+
+          <div class="fourth-section"data-aos="fade-up" data-aos-duration="300" data-aos-delay="400">
+            <img
+              width="96"
+              height="96"
+              src="https://img.icons8.com/color/96/react-native.png"
+              alt="react-native"
+            />
+            <h2 class="skill-title">React</h2>
+          </div>
+
+          <div class="fourth-section"data-aos="fade-up" data-aos-duration="300" data-aos-delay="500">
+            <img
+              width="96"
+              height="96"
+              src="https://img.icons8.com/color/96/python--v1.png"
+              alt="python--v1"
+            />
+            <h2 class="skill-title">Python</h2>
+          </div>
+          <div class="fourth-section" data-aos="fade-up" data-aos-duration="300" data-aos-delay="600">
+            <i class="fa-solid fa-database"></i>
+            <h2 class="skill-title">sql</h2>
+          </div>
+          <div class="fourth-section" data-aos="fade-up" data-aos-duration="300" data-aos-delay="700">
+            <img
+              width="96"
+              height="96"
+              src="https://img.icons8.com/color/96/bootstrap.png"
+              alt="bootstrap"
+            />
+            <h2 class="skill-title">bootstrap</h2>
+          </div>
+          <div class="fourth-section" data-aos="fade-up" data-aos-duration="300" data-aos-delay="800">
+            <img
+              width="96"
+              height="96"
+              src="https://img.icons8.com/color/96/figma--v1.png"
+              alt="figma--v1"
+            />
+            <h2 class="skill-title">figma</h2>
+          </div>
+          <div class="fourth-section" data-aos="fade-up" data-aos-duration="300" data-aos-delay="900">
+            <img
+              width="96"
+              height="96"
+              src="https://img.icons8.com/color/96/firebase.png"
+              alt="firebase"
+            />
+            <h2 class="skill-title">firebase</h2>
+          </div>
+          <div class="fourth-section" data-aos="fade-up" data-aos-duration="300" data-aos-delay="1000">
+            <img
+              width="96"
+              height="96"
+              src="https://img.icons8.com/color/96/visual-studio-code-2019.png"
+              alt="visual-studio-code-2019"
+            />
+            <h2 class="skill-title">vs code</h2>
+          </div>
+          <div class="fourth-section" data-aos="fade-up" data-aos-duration="300" data-aos-delay="1100">
+            <i class="fa-brands fa-github" style="color: #e3b3e7"></i>
+            <h2 class="skill-title">git</h2>
+          </div>
+          <div class="fourth-section" data-aos="fade-up" data-aos-duration="300" data-aos-delay="1200">
+            <img
+              width="96"
+              height="96"
+              src="https://img.icons8.com/color/96/000000/django.png"
+              alt="django"
+            />
+            <h2 class="skill-title">django</h2>
+          </div>
+        </div>
+      </section>
+      <!-- SKILLS SECTION END -->
+
+      <!-- CONTACT SECTION STARTS -->
+
+      <section id="contact">
+        <div class="container">
+          <div class="about-heading">
+            <h1>Contact</h1>
+            <div class="line"></div>
+          </div>
+          <div class="fifth-section">
+            <div class="cont-leftSection">
+              <div class="contact-para">
+              <h1 class="heading-contact" data-aos="fade-up-right" data-aos-duration="2000" data-aos-delay="100">
+                <span class="text-pink-contact">lets connect with me</span><br />
+              </h1>
+              <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                tempora esse officiis quisquam quod velit eaque nisi tenetur?
+                Ducimus reprehenderit unde quam voluptatem facere praesentium
+                magnam ipsum maiores alias dolorem.
+              </p>
+              <div class="btn-container" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300">
+                <a
+                  href=""
+                  download=""
+                  ><button class="btn-contact" data="Contact"></button
+                ></a>
+              </div>
+            </div>
+            </div>
+            <div class="cont-rightSection">
+              <div class="image-container" data-aos="fade-left" data-aos-duration="2000">
+                <img src="img/2787870-removebg-preview.png" class="girl" />
+                <img src="img/elements.png" class="elements" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-container">
+          <div class="social-icons">
+            <a href="" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200"><i class="fa-brands fa-github"></i></a>
+            <a href="" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300"><i class="fa-brands fa-facebook"></i></a>
+            <a href="" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500"><i class="fa-brands fa-google-drive"></i></a>
+          </div>
+         
+          <div class="footer-nav">
+            <ul>
+              <li><a href="" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="100" >Home</a></li>
+              <li><a href="" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">About</a></li>
+              <li><a href="" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="300">Skills</a></li>
+              <li><a href="" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="400">Project</a></li>
+              <li><a href="" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="500">Contact</a></li>
+
+            </ul>
+          </div>
+        </div>
+
+      </footer>
+      <div class="footer-bottom">
+        <p>Copyright &copy; 2023; Designed By <span class="text-pink2">Aisha Masroor</span></p>
+      </div>
+      <!-- PROJECTS SECTION END -->
+      <!-- TYPED JS (Load Animation) -->
+      <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+      <!-- Setup and start animation! -->
+      <script>
+        var typed = new Typed("#element", {
+          strings: [
+            "Web Development",
+            "UI/UX Designing.",
+            "Software Development.",
+          ],
+          typeSpeed: 50,
+        });
+      </script>
+      <!-- initializing AOS -->
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+       <script>
+        AOS.init();
+      </script>
+    </main>
+  </body>
+</html>
