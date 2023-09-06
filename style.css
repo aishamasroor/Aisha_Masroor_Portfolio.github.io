@@ -1,3 +1,4 @@
+html, body {width: auto!important; overflow-x: hidden!important} 
 html{
   scroll-behavior: smooth;
  
@@ -79,9 +80,7 @@ nav a {
 }
 
 @media (max-width: 600px) {
-  .body{
-    
-  }
+  html, body {width: auto!important; overflow-x: hidden!important} 
   nav {
     /* padding: 0 4vw; */
     background-color: rgb(9, 9, 51);
@@ -122,7 +121,7 @@ nav a {
       font-size: 4vw;
       /* padding: 0vw 14vw; */
       line-height: 50px;
-      margin-right: 25vw;
+      
   }
   .logo {
     max-width: 40%;
@@ -135,23 +134,24 @@ nav a {
 
   .about-paragraph {
     font-size: 1.5rem;
-    padding: 0vw 12vw;
-    padding-right: 0vw;
-    padding-left: 10vw;
+    padding: 0vh 9vw;
+    text-align: center;
   }
 
   .cv-btn-container {
-    padding: 0vw 10vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .btn-cv {
     padding: 2.1vw 2.1vw !important;
-    font-size: 3vw !important;
+    font-size: 0.8rem !important;
   }
   .rightSection {
     width: 90% !important;
   }
   .rightSection img {
-    width: 100%;
+    width: 90%;
   }
   /* .leftSection .about-paragraph {
     text-align: center;
