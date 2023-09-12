@@ -53,7 +53,7 @@ nav a {
 
 }
 .text-pink {
-  color: rgb(214, 26, 57);
+  color: rgb(18, 194, 210);
   font-weight: bolder;
   text-transform: uppercase;
 }
@@ -81,6 +81,9 @@ nav a {
 
 @media (max-width: 600px) {
   html, body {width: auto!important; overflow-x: hidden!important} 
+  html{
+    scroll-behavior: smooth;
+  }
   nav {
     /* padding: 0 4vw; */
     background-color: rgb(9, 9, 51);
@@ -103,7 +106,7 @@ nav a {
     width: 100%;
     height: 100%;
     background-color: rgb(14, 6, 44);
-    left: -100%;
+    right: -100%;
     line-height: 70px;
     transition: all 0.5s;
     flex-direction: column;
@@ -111,7 +114,7 @@ nav a {
   }
 
   nav ul.show {
-    left: 0;
+    right: 0;
   }
   .left{
     margin-bottom: 9vw;
@@ -128,6 +131,7 @@ nav a {
   }
 
   #Home {
+    margin-top: 10vh;
     flex-direction: column;
     padding: 20vw 0vw;
   }
@@ -251,6 +255,7 @@ nav a {
     text-transform: uppercase;
 }
 }
+/* ======================== MEDIA QUERY ENDS ==================== */
 
 /* ====================== Home Section ======================= */
 .cv-btn-container {
@@ -282,7 +287,7 @@ nav a {
 #Home {
   display: flex;
   justify-content: space-around;
-  margin-top: 10vw;
+  margin-top: 20vh;
   align-items: center;
 }
 .leftSection {
@@ -409,6 +414,9 @@ nav a {
 #about {
   margin-top: 8rem;
 }
+.text-light{
+  color: #e6e7ed;
+}
 .second-section {
   display: flex;
   justify-content: center;
@@ -469,6 +477,9 @@ nav a {
   /* min-height: 95vh; */
   justify-content: center;
 }
+.project-desc{
+  margin-top: 12px;
+}
 .project-image img {
   max-width: 100%;
 }
@@ -478,12 +489,11 @@ nav a {
   align-items: center;
   flex-direction: column;
   padding: 2rem;
-  width: 50%;
+  width: 100%;
   max-width: 195px;
-  background-image: linear-gradient(to bottom, rgba(4, 28, 79, 0.927) , rgb(21, 4, 68));
+  background-image: linear-gradient(to bottom, rgba(3, 23, 65, 0.927) , rgb(38, 8, 64));
   border-radius: 10px;
   position: relative;
-  border: 1px solid rgb(35, 7, 107);
   background-clip: padding-box;
   text-align: center;
   color: #f1f3f3; 
@@ -704,7 +714,7 @@ nav a {
   transform: scale(0.96);
 }
 .text-pink-contact {
-  color: rgb(214, 26, 57);
+  color: rgb(18, 194, 210);
   font-weight: bolder;
   text-transform: uppercase;
 }
@@ -729,13 +739,13 @@ footer{
 }
 .social-icons a{
   text-decoration: none;
-  padding: 10px;
+  padding: 8px;
   background-color: white;
   margin: 10px;
-  border-radius: 50%;
+  border-radius: 5px;
 }
 .social-icons a i{
-  font-size: 1.5em;
+  font-size: 1.7em;
   color: rgb(6, 6, 71);
 }
 
@@ -760,14 +770,15 @@ footer{
 }
 .footer-nav ul li a{
 text-decoration: none;
-color: white;
-margin: 20px;
+color: rgb(181, 175, 175);
+margin: 15px;
 opacity: 0.7;
 transition: 0.5s;
 }
 
 .footer-nav ul li a:hover{
   opacity: 1;
+  color: white;
 }
 .footer-bottom{
   background: linear-gradient(
@@ -779,14 +790,13 @@ transition: 0.5s;
   text-align: center;
 }
 .footer-bottom p{
-  color: white;
+  color: #c4caca;
 }
 .text-pink2{
   text-transform: uppercase;
-  opacity: 0.7;
   font-weight: 500;
   letter-spacing: 1px;
-  color: #edf4f4;
+  color: #e2e8e8;
 }
 .footer-image{
   max-width: 100%;
