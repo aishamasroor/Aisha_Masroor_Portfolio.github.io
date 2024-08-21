@@ -1,7 +1,10 @@
-html, body {width: auto!important; overflow-x: hidden!important} 
-html{
+html,
+body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+html {
   scroll-behavior: smooth;
- 
 }
 * {
   margin: 0;
@@ -18,7 +21,7 @@ body {
   color: white;
   font-family: "Poppins", sans-serif;
 }
-img{
+img {
   cursor: pointer;
 }
 
@@ -50,7 +53,6 @@ nav a {
   /* opacity: 1;
   animation: navbar .5s ease forwards;
   animation-delay: calc(.2s * var(--i)); */
-
 }
 .text-pink {
   color: rgb(18, 194, 210);
@@ -60,10 +62,9 @@ nav a {
 .nav-links a {
   color: aliceblue;
   text-decoration: none;
-
 }
 .nav-links a:hover {
-  color:  rgb(214, 26, 57);
+  color: rgb(214, 26, 57);
   transition: 0.5s;
 }
 .mobile-navbar-btn {
@@ -72,16 +73,20 @@ nav a {
   cursor: pointer;
   display: none;
 }
-.left{
+.left {
   margin-bottom: 6vh;
 }
-.logo{
+.logo {
   max-width: 37%;
 }
 
 @media (max-width: 600px) {
-  html, body {width: auto!important; overflow-x: hidden!important} 
-  html{
+  html,
+  body {
+    width: auto !important;
+    overflow-x: hidden !important;
+  }
+  html {
     scroll-behavior: smooth;
   }
   nav {
@@ -116,15 +121,14 @@ nav a {
   nav ul.show {
     right: 0;
   }
-  .left{
+  .left {
     margin-bottom: 9vw;
   }
   .mobile-navbar-btn {
-      display: block;
-      font-size: 4vw;
-      /* padding: 0vw 14vw; */
-      line-height: 50px;
-      
+    display: block;
+    font-size: 4vw;
+    /* padding: 0vw 14vw; */
+    line-height: 50px;
   }
   .logo {
     max-width: 40%;
@@ -160,100 +164,99 @@ nav a {
   /* .leftSection .about-paragraph {
     text-align: center;
   } */
-  
 
   /* ---------RESPONSIVE ABOUT -------------*/
   #about {
-    margin-top: 4rem ! important;
-}
-  .second-section{
+    margin-top: 4rem !important;
+  }
+  .second-section {
     flex-direction: column;
   }
-  .container h1{
+  .container h1 {
     font-size: 20px;
   }
-  .left-content img{
+  .left-content img {
     width: 100%;
   }
   .left-content {
     padding: 0vh 9vw;
     width: 90% !important;
   }
-  .right-content{
+  .right-content {
     padding: 0vh 9vw;
   }
-  .heading, .text-pink{
+  .heading,
+  .text-pink {
     font-size: 1rem;
-
   }
-  .about-paragraph2{
+  .about-paragraph2 {
     font-size: 5.3vw;
     padding: 0vw 19vw;
     padding-right: 9vw;
     padding-left: 10vw;
     margin-top: 10vh;
   }
-  .about-paragraph2 h1{
+  .about-paragraph2 h1 {
     font-size: 1.9rem;
   }
-  .about-paragraph2 .text-pink{
+  .about-paragraph2 .text-pink {
     font-size: 1.5rem;
   }
-  .about-paragraph2 p{
+  .about-paragraph2 p {
     font-size: 0.8rem;
   }
 
   /* ================= Responsive Projects =================== */
-  #projects{
-    margin-top: 10rem ! important
+  #projects {
+    margin-top: 10rem !important;
   }
- 
+
   /* ======================== Responsive Contact ==================== */
 
-  #contact{
-    margin-top: 10rem ! important
+  #contact {
+    margin-top: 10rem !important;
   }
 
-  .fifth-section{
+  .fifth-section {
     flex-direction: column-reverse;
   }
-  .cont-rightSection{
+  .cont-rightSection {
     padding: 0vh 9vw;
     width: 90% !important;
   }
-  .image-container{
+  .image-container {
     width: 100%;
   }
-  .cont-leftSection p{
+  .cont-leftSection p {
     font-size: 0.7rem;
   }
-  .contact-para{
+  .contact-para {
     font-size: 5.3vw;
     padding: 0vw 19vw;
     padding-right: 9vw;
     padding-left: 10vw;
     margin-top: 10vh;
   }
-  .contact-para h1{
+  .contact-para h1 {
     font-size: 1.9rem;
   }
   /* ========================= RESPONSIVE FOOTER ====================== */
-  .footer-nav ul{
+  .footer-nav ul {
     flex-direction: column;
   }
-  .footer-nav ul li{
+  .footer-nav ul li {
     width: 100%;
     text-align: center;
-    margin:10px
+    margin: 10px;
   }
-  .footer-container{
+  .footer-container {
     flex-direction: column;
   }
   .text-pink-contact {
     color: rgb(214, 26, 57);
     font-weight: bolder;
     text-transform: uppercase;
-}
+  }
 }
 /* ======================== MEDIA QUERY ENDS ==================== */
 
@@ -414,7 +417,7 @@ nav a {
 #about {
   margin-top: 8rem;
 }
-.text-light{
+.text-light {
   color: #e6e7ed;
 }
 .second-section {
@@ -426,7 +429,7 @@ nav a {
 
 .left-content {
   width: 100%;
-    padding-left: 9vw;
+  padding-left: 9vw;
 }
 .right-content {
   width: 100%;
@@ -477,7 +480,7 @@ nav a {
   /* min-height: 95vh; */
   justify-content: center;
 }
-.project-desc{
+.project-desc {
   margin-top: 12px;
 }
 .project-image img {
@@ -491,12 +494,16 @@ nav a {
   padding: 2rem;
   width: 100%;
   max-width: 195px;
-  background-image: linear-gradient(to bottom, rgba(3, 23, 65, 0.927) , rgb(38, 8, 64));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(3, 23, 65, 0.927),
+    rgb(38, 8, 64)
+  );
   border-radius: 10px;
   position: relative;
   background-clip: padding-box;
   text-align: center;
-  color: #f1f3f3; 
+  color: #f1f3f3;
 
   /* &:before {
     content: "";
@@ -521,8 +528,8 @@ nav a {
 .project-image {
   opacity: 0.8;
   overflow: hidden;
-  max-width: 200px;
-  height: 150px;
+  max-width: 150px;
+  height: 100px;
   position: relative;
   img {
     position: absolute;
@@ -615,7 +622,7 @@ nav a {
   ); */
   /* -webkit-background-clip: text;
   background-clip: text;*/
-  color: rgba(70, 88, 127, 0.968); 
+  color: rgba(70, 88, 127, 0.968);
 }
 
 /* Media query for mobile screens */
@@ -623,7 +630,6 @@ nav a {
   .fourth-section {
     flex-basis: calc(33.33% - 20px); /* 3 skills in a row */
   }
-
 }
 
 /* ========================== Contact Section =========================*/
@@ -638,12 +644,12 @@ nav a {
 }
 .cont-rightSection {
   width: 100%;
-    padding-right: 9vw;
-    padding: 0vh 9vw
+  padding-right: 9vw;
+  padding: 0vh 9vw;
 }
 .image-container {
   position: relative;
-  
+
   max-width: 100%;
 }
 .image-container img {
@@ -651,7 +657,7 @@ nav a {
 }
 .cont-leftSection {
   width: 100%;
-    padding: 0vh 9vw
+  padding: 0vh 9vw;
 }
 
 .girl {
@@ -718,69 +724,68 @@ nav a {
   font-weight: bolder;
   text-transform: uppercase;
 }
-.heading-contact{
+.heading-contact {
   font-size: 2rem;
   margin: 0;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 /* =============================== FOOTER SECTION =========================== */
-footer{
+footer {
   background-color: rgb(70, 11, 99);
 }
-.footer-container{
+.footer-container {
   max-width: 100%;
-  padding: 70px 0px; 
+  padding: 70px 0px;
 }
-.social-icons{
+.social-icons {
   display: flex;
   justify-content: center;
- 
 }
-.social-icons a{
+.social-icons a {
   text-decoration: none;
   padding: 8px;
   background-color: white;
   margin: 10px;
   border-radius: 5px;
 }
-.social-icons a i{
+.social-icons a i {
   font-size: 1.7em;
   color: rgb(6, 6, 71);
 }
 
 /* hover effects on social media icons */
-.social-icons a:hover{
+.social-icons a:hover {
   background-color: rgb(70, 11, 99);
   transform: 0.5s;
 }
-.social-icons a:hover i{
-  color: white; 
+.social-icons a:hover i {
+  color: white;
   transition: 0.5s;
 }
-.footer-nav{
+.footer-nav {
   margin: 30px 0;
 }
-.footer-nav ul{
+.footer-nav ul {
   display: flex;
   justify-content: center;
 }
-.footer-nav li{
+.footer-nav li {
   list-style: none;
 }
-.footer-nav ul li a{
-text-decoration: none;
-color: rgb(181, 175, 175);
-margin: 15px;
-opacity: 0.7;
-transition: 0.5s;
+.footer-nav ul li a {
+  text-decoration: none;
+  color: rgb(181, 175, 175);
+  margin: 15px;
+  opacity: 0.7;
+  transition: 0.5s;
 }
 
-.footer-nav ul li a:hover{
+.footer-nav ul li a:hover {
   opacity: 1;
   color: white;
 }
-.footer-bottom{
+.footer-bottom {
   background: linear-gradient(
     to right,
     rgb(49, 100, 98),
@@ -789,20 +794,20 @@ transition: 0.5s;
   padding: 20px 0;
   text-align: center;
 }
-.footer-bottom p{
+.footer-bottom p {
   color: #c4caca;
 }
-.text-pink2{
+.text-pink2 {
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1px;
   color: #e2e8e8;
 }
-.footer-image{
+.footer-image {
   max-width: 100%;
   height: 100%;
 }
-.footer-image img{
+.footer-image img {
   height: 100%;
   width: 100%;
 }
